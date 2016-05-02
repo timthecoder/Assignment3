@@ -11,9 +11,11 @@ public class Hailstone extends ConsoleProgram {
 	
 	public void run() {
 		
+		//requests an input
 		int n = readInt("Enter a number: ");
 		
 		
+		//algorithm of hailstone
 		while(n != 1){
 			
 			if( n % 2 == 0){
@@ -28,6 +30,8 @@ public class Hailstone extends ConsoleProgram {
 				index++;
 			}
 		}
+		
+		//prints the result
 		println("The process took " + index + " to reach to 1");
 		
 	}
